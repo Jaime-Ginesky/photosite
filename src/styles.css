@@ -26,22 +26,45 @@ header {
     justify-content: center;
 }
 
-a {
+h1 {
+    font-family: var(--nav-font-family);
+    font-weight: 300;
+    font-size: calc(6vw + .3rem);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 1em;
     display: flex;
-    justify-content:right;
-    margin: 40px 300px;
+    justify-content: center;
+}
+
+.nav-link-active, .nav-link-contact {
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
     text-decoration: none;
     color:black;
     font-family: var(--nav-font-family);
-    font-size: calc(3vw + .3rem);
     font-weight: 200;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-a:hover {
+.nav-link-active {
+    font-size: calc(6vw + .3rem);
+}
+
+.nav-link-active:hover,
+.nav-link-contact:hover,
+.contact-list a:hover {
     color:rgb(154, 151, 151);
     transform:scale(1);
+}
+
+.nav-link-contact {
+    width: 100%;
+    margin-top: 100px;
+    font-size: calc(1vw + .1rem); 
+    font-weight: 300;
 }
 
 .nav-list {
@@ -71,6 +94,33 @@ a:hover {
     height: auto !important;
     margin-bottom: 8px;
 }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    flex-direction: column;
+    color:black;
+    font-family: var(--nav-font-family);
+    list-style: none;
+    font-size: calc(4vw + .3rem);
+    font-weight: 200;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    line-height: calc(2vw + 4rem);
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 @media (min-width: 789px) {
     .gallery {
