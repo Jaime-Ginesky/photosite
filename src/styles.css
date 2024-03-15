@@ -14,7 +14,7 @@
         box-sizing: inherit;
       }
     
-      
+
 
 header {
     font-family: var(--nav-font-family);
@@ -41,8 +41,15 @@ header {
     justify-content: center;
 }
 
-.nav-list .nav-item .nav-link-active:hover {
-        color:rgb(13, 16, 15);
-        cursor: pointer;
+.gallery {
+    margin-top: 2em;
+    line-height: 0;
+    column-count: 3;
+    max-width: 400px;
 }
 
+.gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+}
